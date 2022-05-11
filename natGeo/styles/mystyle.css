@@ -1,0 +1,99 @@
+/* global */
+:root {
+    --primary:#ffcc00;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/* utlilties */
+
+/* menu */
+nav.menu {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.menu img {
+    height: 30px;
+    padding-left: 20px;
+}
+
+
+.linkGlass,.linkRenew,.linkMenu,.logo {
+    display: none
+}
+.linkLogin {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: black;
+}
+.linkSub {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding: 17px;
+    transition: background-color 1s linear;
+}
+.linkSub:hover {
+    background-color:var(--primary);
+    color: black;
+}
+.linkAngles {
+    color: black;
+}
+nav.menu a:last-of-type {
+    margin-right: 30px;
+}
+
+/* header */
+header {
+    height: 225px;
+    text-align: center;
+}
+header h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    padding-top: 55px;
+}
+header p {
+    padding-top: 20px;
+}
+header span {
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary);
+    border-bottom-width: 2.5px;
+    transition: background-color 1s linear;    
+}
+header span:hover {
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+    
+}
+header div {
+    padding-bottom: 25px;
+    border-bottom: 4px solid var(--primary);
+    width: 6%;
+    margin: 0px auto;
+}
